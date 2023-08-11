@@ -1,5 +1,4 @@
 // import React from 'react'
-import {Link} from 'react-router-dom'
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai"
 import ButtonLinks from '../components/ButtonMailTo/ButtonLinks'
 
@@ -18,13 +17,14 @@ const Home: React.FC = () => {
         </div>
         {/* Left Side of DIV = Contains Image of Me*/}
         <div className="flex flex-col xl:w-1/2 w-full">
-            <div>
-              {/* Image holder */}
+            <div className="flex flex-col items-center">
+                <img className=" object-contain h-auto w-auto md:w-[520px] md:h-[480x] xl:w-auto xl:h-auto rounded-t-lg justify-start" src="/photo.png"
+                alt="Profile Photo" />
             </div>
             <div className="flex flex-row justify-evenly">
-            <ButtonLinks label="Github" url="https://github.com/DennisKoech115325" Icon={<AiFillGithub className='text-2xl'/>}/>
-          <ButtonLinks label="Gmail" url="mailto:dennis007kipkorir@gmail.com" Icon={<AiOutlineMail className='text-2xl'/>}/>
-          <ButtonLinks label="LinkedIn" url="https://www.linkedin.com/in/dennis-kipkorir/" Icon={<AiFillLinkedin className='text-2xl'/>}/>
+              <ButtonLinks label="Github" url="https://github.com/DennisKoech115325" Icon={<AiFillGithub className='text-2xl'/>}/>
+              <ButtonLinks label="Gmail" url="mailto:dennis007kipkorir@gmail.com" Icon={<AiOutlineMail className='text-2xl'/>}/>
+              <ButtonLinks label="LinkedIn" url="https://www.linkedin.com/in/dennis-kipkorir/" Icon={<AiFillLinkedin className='text-2xl'/>}/>
             </div>
         </div>
     </div>
