@@ -1,6 +1,6 @@
 import React from 'react'
-import ButtonMailto from './ButtonMailTo'
-import { ButtonMailToPNG } from './ButtonMailToPNG'
+import ButtonMailto from './ButtonMailTo/ButtonMailTo'
+import { ButtonMailToPNG } from './ButtonMailTo/ButtonMailToPNG'
 const Nav2: React.FC = () => {
   return (
     <div className='relative container pb-5 pt-5 max-w-full align-baseline'>

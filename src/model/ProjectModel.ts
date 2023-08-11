@@ -3,4 +3,5 @@ export interface Project {
     name: string,
     details: string,
     technologies: string[]
+    link: string
 }
